@@ -14,7 +14,7 @@ for i in range(n):
             l+=1
             r-=1
         elif s[l]==s[r-1] or s[l+1]==s[r]:
-            l2 = l
+            l2 = l 
             r2 = r-1
             ptr +=1
             while l2<r2:
