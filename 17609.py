@@ -6,7 +6,7 @@ for i in range(n):
     ptr = 0
     ptrL =1
     ptrR =1
-    while l<r:
+    while l<r: 
         # print(s[l],s[r])
         if ptr > 0:
             break
