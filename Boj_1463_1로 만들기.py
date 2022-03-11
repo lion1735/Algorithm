@@ -11,3 +11,4 @@ for i in range(4, n+1):
         dp.append(dp[i-1]+1)
 
 print(dp[n])
+ 
