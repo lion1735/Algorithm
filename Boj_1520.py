@@ -1,0 +1,26 @@
+import sys
+sys.setrecursionlimit(99999)
+def dfs(y, x, ):
+    if y == n-1 and x == m-1:
+        return 1
+    if dp[y][x] != -1:
+        return dp[y][x]
+    dp[y][x] = 0
+    for i in range(4):
+        ny = y + dy[i]
+        nx = x + dx[i]
+        if 0 > ny or 0 > nx or ny >= n or nx >= m or arr[ny][nx] >= arr[y][x]:
+            continue
+
+        dp[y][x] += dfs(ny, nx)
+    return dp[y][x]
+
+
+dy = [-1, 1, 0, 0]
+dx = [0, 0, -1, 1]
+
+n, m = map(int, input().split())
+arr = [list(map(int, input().split()))for _ in range(n)]
+dp = [[-1] * m for _ in range(n)]
+hap = 0
+print(dfs(0, 0))
