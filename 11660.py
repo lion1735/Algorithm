@@ -5,7 +5,7 @@ li = [[0 for _ in range(n+1)]] + [[0]+list(map(int, sys.stdin.readline().rstrip(
 prefix = [[0 for _ in range(n+1)]for _ in range(n+1)]
 for i in range(1, n+1):
     for j in range(1, n+1):
-        prefix[i][j] = li[i][j] + prefix[i][j-1] + \
+        prefix[i][j] = li[i][j] + prefix[i][j-1] + \ 
             prefix[i-1][j] - prefix[i-1][j-1]
 
 
