@@ -8,7 +8,7 @@ for i in range(1, n+1):
     if m == 'P':
         A[i] = A[i-1] + 1
         B[i] = B[i-1]
-        C[i] = C[i-1]
+        C[i] = C[i-1] 
     elif m == 'H':
         A[i] = A[i-1]
         B[i] = B[i-1] + 1
