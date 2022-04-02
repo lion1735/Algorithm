@@ -9,7 +9,7 @@ for i in range(1, n+1):
             prefix[i-1][j] - prefix[i-1][j-1]
 
 
-for _ in range(m):
+for _ in range(m): 
     x1, y1, x2, y2 = map(int, sys.stdin.readline().rstrip().split())
     hap = prefix[x2][y2] - prefix[x2][y1-1] - \
         prefix[x1-1][y2] + prefix[x1-1][y1-1]
