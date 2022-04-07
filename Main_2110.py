@@ -26,3 +26,4 @@ while s<= e:
     else:
         e = mid - 1
 print(ans)
+ 
