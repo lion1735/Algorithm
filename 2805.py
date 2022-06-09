@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 li = list(map(int, input().split()))
 
-l = 1
+l = 1 
 r = max(li)
 while l <= r:
     cnt = 0
