@@ -40,7 +40,7 @@ public class Main_1600 {
                         q.offer(new int[] {ny, nx, nh, cnt+1}); //큐에 담기
                         visited[ny][nx][nh] = true;
                     }
-                }
+                } 
             }
 		}
         return -1;
