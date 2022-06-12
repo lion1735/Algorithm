@@ -13,3 +13,4 @@ if n!=1:
     res.append(n)
 print(len(res))
 print(*res)
+ 
