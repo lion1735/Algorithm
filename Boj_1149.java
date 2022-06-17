@@ -25,3 +25,4 @@ public class Main_1149_최강 {
         System.out.println(Math.min(Math.min(dp[n][0], dp[n][1]), dp[n][2]));
     }
 }
+ 
